@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>fizzbuzz-calculator</title>
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+    <script src="assets/js/fizz_buzz.js"></script>
+    <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+  </head>
+  <body>
+      <h1>
+          Min egen Fizzbuzz-sida
+      </h1>
+      <form style="text-align: center">
+        <input type="text" id="number" placeholder="Ditt nummer">
+        <input type="button" id="calculate" value="FizzBuzz!">
+      </form>
+      <div>
+        <span id="display_value"></span>
+        <span id="display_message"></span>
+      </div>
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIHE3FMwiRUELJzWuGhWSqXkQuYPePmpOeOL1WWTEUWPa13tOJ" />
+      <p>
+        Fizz buzz is a group word game for children to teach them about
+        division. Players take turns to count incrementally, replacing any
+        number divisible by three with the word "fizz", and any number divisible
+        by five with the word "buzz".
+      </p>
+
+      </body>
+</html>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#calculate').click(function () {
+      var w = parseFloat($('#weight').val());
+      var h = parseFloat($('#height').val());
+      var person = new Person({weight: w, height: h});
+      person.calculate_bmi();
+      $('#display_value').html('Your BMI is ' + person.bmiValue);
+      $('#display_message').html('and you are '+ person.bmiMessage);
+    });
+  });
+</script>

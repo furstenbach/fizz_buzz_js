@@ -1,3 +1,5 @@
+// #### Took some inspiration for the fizz_buzz function from my brother Fredric (his work at www.furstenbach.com). Nice and short.
+
 ## JS Test Boilerplate 0.1 (WIP)
 [![Build Status](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate.svg?branch=master)](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/CraftAcademy/karma-jquery-jasmine_boilerplate/badge.svg?branch=master)](https://coveralls.io/github/CraftAcademy/karma-jquery-jasmine_boilerplate?branch=master)
