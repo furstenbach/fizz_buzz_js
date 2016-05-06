@@ -11,9 +11,12 @@
       <h1>
           Min egen Fizzbuzz-sida
       </h1>
+      <p>
+        Fyll i en siffra i rutan:
+      </p>
       <form style="text-align: center">
         <input type="text" id="number" placeholder="Ditt nummer">
-        <input type="button" id="calculate" value="Go FizzBuzz!">
+        <input type="button" id="MyButton" value="Go FizzBuzz!">
       </form>
       <div>
         <span id="display_value"></span>
@@ -29,12 +32,11 @@
 
       </body>
 </html>
-<script type="text/javascript">
-  $(document).ready(function () {
-    $('#calculate').click(function () {
-      var number = parseFloat($('number').val());
-      number.Fizz_Buzz ();
-      $('#display_value').html('And the result is....' + subject.Fizz_Buzz);
+      <script type="text/javascript">
+          $(document).ready(function(){
+          $('#MyButton').click(function(){
+            FizzBuzz();
+          $('#display_value').html('And the result is....' + subject.Fizz_Buzz);
         });
   });
 </script>
