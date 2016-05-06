@@ -1,15 +1,14 @@
-Function Fizz_Buzz() {};
+Function Fizz_Buzz("number") {};
 
   if ((i%15)===0){
-      console.log("FizzBuzz");
+      obj.Message = "FizzBuzz"
   }
   else if ((i%3)===0){
-      console.log("Fizz");
+      obj.Message = "Fizz"  }
   }
   else if ((i%5)===0){
-      console.log("Buzz");
+      obj.Message = "Buzz"
   }
   else {
-      console.log(i);
-  }
-}
+      obj.Message = 'i'
+  };

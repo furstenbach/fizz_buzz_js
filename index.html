@@ -11,13 +11,13 @@
       <h1>
           Min egen Fizzbuzz-sida
       </h1>
-      <p>
+      <p position=center>
         Fyll i en siffra i rutan:
       </p>
       <form style="text-align: center">
         <input type="text" id="number" placeholder="Ditt nummer">
-        <input type="button" id="MyButton" value="Go FizzBuzz!">
-      </form>
+        <input type="button" id="MyButton" value="Go FizzBuzz!" onclick="Fizz_Buzz()"/>
+    </form>
       <div>
         <span id="display_value"></span>
         <span id="display_message"></span>
@@ -34,9 +34,16 @@
 </html>
       <script type="text/javascript">
           $(document).ready(function(){
-          $('#MyButton').click(function(){
-            FizzBuzz();
-          $('#display_value').html('And the result is....' + subject.Fizz_Buzz);
+          $('#MyButton').click(function Fizz_Buzz(){
+          var input = document.getElementById("number").value;
+          if (input.length === 0) {
+              alert("Please enter a valid input");
+              return;
+          }
+            document.getElementById("number").innerHTML = "You have entered " + input;
+          }
+                      FizzBuzz();
+          $('#display_value').html('And the result is....' + obj.Message);
         });
   });
 </script>
